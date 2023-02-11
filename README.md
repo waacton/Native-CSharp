@@ -7,4 +7,4 @@ This repo demonstrates how to use [.NET 7](https://dotnet.microsoft.com/en-us/do
    ```shell
    dotnet publish .\_Native-C#\ -r win-x64 -o /Native-Demo`
    ```
-1. Dynamically the DLL in a language of your choice and call the functions (see example code)
+1. Dynamically load the DLL in a language of your choice and call the functions (see example code).
