@@ -1,19 +1,19 @@
 # Call C# library from any language
 This repo demonstrates how to use [.NET 7](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)'s [Native AOT](https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot/) feature to build a native DLL that can be called from other languages, such as Java and Python.
 
-## 1. Enable native AOT publishing
+### 1. Enable native AOT publishing
 In the `.csproj` file add `<PublishAot>true</PublishAot>` ([see example](/_Native-C%23/Native-C%23.csproj))
 
-## 2. Expose native functions
+### 2. Expose native functions
 Associate the C# native functions with the `[UnmanagedCallersOnly]` attribute ([see example](/_Native-C%23/NativeFunctions.cs))
 
-## 3. Publish to a native DLL
+### 3. Publish to a native DLL
 For these examples the native DLL is published to `/native-demo/native-c#.dll`:
 ```shell
    dotnet publish ./_native-c#/ -r win-x64 -o /native-demo
 ```
 
-## 4. Use the native DLL in any language
+### 4. Use the native DLL in any language
 Load the library at runtime and call the native functions. See examples in:
 - [C#](/C%23/NativeFromC%23.cs)
 - [C++](/C%2B%2B/NativeFromC%2B%2B.cpp)
