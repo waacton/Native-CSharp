@@ -32,22 +32,3 @@ Console.WriteLine(subtracted);
 Console.WriteLine(multiplied);
 Console.WriteLine(divided);
 Console.WriteLine(string.Join(", ", array));
-
-/*
- * this code is a more "direct" usage of the 'populate_array()' native function, which actually expects a pointer
- * however, getting the pointer is more work than necessary, when we can simply pass the array
- * which the native function will consume as a pointer
-
-[DllImport("/native-demo/native-c#.dll")]
-static extern unsafe void populate_array(double* arrayPointer, double arraySize);
-
-var array = new double[5];
-unsafe
-{
-    fixed (double* pointer = array)
-    {
-        populate_array(pointer, array.Length);
-    }
-}
-
-*/
