@@ -14,7 +14,7 @@ For these examples the native DLL is published to `/native-demo/native-c#.dll`:
 ```
 
 ## 4. Use the native DLL in any language
-Dynamically load the library and call the native functions. See examples in:
+Load the library at runtime and call the native functions. See examples in:
 - [C#](/C%23/NativeFromC%23.cs)
 - [C++](/C%2B%2B/NativeFromC%2B%2B.cpp)
 - [F#](/F%23/NativeFromF%23.fs)
@@ -27,9 +27,9 @@ Dynamically load the library and call the native functions. See examples in:
 
 All examples showcase using native functions that:
 - prints a message to the console,
-- returns a 32-bit integer,
-- returns a 64-bit double,
-- modifies an array of 64-bit doubles
+- returns a 32-bit integer (`7 + 2`, `7 - 2`),
+- returns a 64-bit double (`7 * 2`, `7 / 2`),
+- modifies an array of 64-bit doubles (`array[i] = (i * 2) + 0.5`)
 
 The output should look something like:
 ```
