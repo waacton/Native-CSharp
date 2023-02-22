@@ -21,6 +21,7 @@ Load the library at runtime and call the native functions. See examples in:
 - [Go](/Go/NativeFromGo.go)
 - [Java](/Java/NativeFromJava.java)
 - [JavaScript](/JavaScript/NativeFromJavaScript.js)
+- [Kotlin](/Kotlin/NativeFromKotlin.kt)
 - [Python](/Python/NativeFromPython.py)
 - [Ruby](/Ruby/NativeFromRuby.rb)
 - [Rust](/Rust/NativeFromRust.rs)
