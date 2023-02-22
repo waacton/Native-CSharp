@@ -17,8 +17,8 @@ interface NativeLibrary : Library {
 fun main() {
     val added = NativeLibrary.INSTANCE.add_numbers(7, 2)
     val subtracted = NativeLibrary.INSTANCE.subtract_numbers(7, 2)
-    val multiplied: Double = NativeLibrary.INSTANCE.multiply_numbers(7.0, 2.0)
-    val divided: Double = NativeLibrary.INSTANCE.divide_numbers(7.0, 2.0)
+    val multiplied = NativeLibrary.INSTANCE.multiply_numbers(7.0, 2.0)
+    val divided = NativeLibrary.INSTANCE.divide_numbers(7.0, 2.0)
 
     val array = DoubleArray(5)
     NativeLibrary.INSTANCE.populate_array(array, array.size)
