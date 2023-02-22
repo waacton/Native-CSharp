@@ -1,4 +1,4 @@
-# Call C# library from any language
+# Use C# library from any language
 This repo demonstrates how to use [.NET 7](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)'s [Native AOT](https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot/) feature to build a native DLL that can be called from other languages, such as Java and Python.
 
 ### 1. Enable native AOT publishing
@@ -36,7 +36,7 @@ The output should look something like:
 Hello from native code written in C#!
 9
 5
-14
+14.0
 3.5
 [0.5, 2.5, 4.5, 6.5, 8.5]
 ```
