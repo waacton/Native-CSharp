@@ -10,7 +10,7 @@ Associate the C# native functions with the `[UnmanagedCallersOnly]` attribute ([
 ### 3. Publish to a native DLL
 For these examples the native DLL is published to `/native-demo/native-c#.dll`:
 ```shell
-   dotnet publish ./_native-c#/ -r win-x64 -o /native-demo
+dotnet publish ./_native-c#/ -r win-x64 -o /native-demo
 ```
 
 ### 4. Use the native DLL in any language
@@ -24,6 +24,7 @@ Load the library at runtime and call the native functions. See examples in:
 - [Python](/Python/NativeFromPython.py)
 - [Ruby](/Ruby/NativeFromRuby.rb)
 - [Rust](/Rust/NativeFromRust.rs)
+- [Visual Basic](/Visual%20Basic/NativeFromVisualBasic.vb)
 
 All examples showcase using native functions that:
 - prints a message to the console,
