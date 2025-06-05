@@ -1,4 +1,4 @@
-# Use C# library from any language
+# Use C# library from any<sup>[*](#--)</sup> language
 This repo demonstrates how to use [.NET 7](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)'s [Native AOT](https://learn.microsoft.com/en-us/dotnet/core/deploying/native-aot/) feature to build a native DLL that can be called from other languages, such as Java and Python.
 
 ### 1. Enable native AOT publishing
@@ -13,7 +13,7 @@ For these examples the native DLL is published to `/native-demo/native-c#.dll`:
 dotnet publish ./_native-c#/ -r win-x64 -o /native-demo
 ```
 
-### 4. Use the native DLL in any language
+### 4. Use the native DLL in any<sup>[*](#--)</sup> language
 Load the library at runtime and call the native functions. See examples in:
 - [C#](/C%23/NativeFromC%23.cs)
 - [C++](/C%2B%2B/NativeFromC%2B%2B.cpp)
@@ -42,3 +42,10 @@ Hello from native code written in C#!
 3.5
 [0.5, 2.5, 4.5, 6.5, 8.5]
 ```
+
+### * * *
+
+> [!NOTE]
+> I spent a long time trying to get this to work in MATLAB and R but ultimately failed.
+> Both languages seem to require some level of C wrapper to work.
+> I would be very interested to see a solution to this!
